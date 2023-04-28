@@ -33,6 +33,17 @@ function App() {
       <Expenses item={expenses}></Expenses>
     </div>
   );
+  // return React.createElement(
+  //   "div",
+  //   {},
+  //   React.createElement("h2", {}, "Let's get started!"),
+  //   React.createElement(Expenses, { item: expenses })
+  // );
+  /*
+   * Under the hood, react calls createElement recursively. so, If not wrapping
+   * elements, React can't render it. So, we need to wrap it with a div.
+   * Component must have a single root element.
+   * */
 }
 
 export default App;
