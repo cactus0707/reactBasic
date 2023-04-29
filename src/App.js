@@ -1,6 +1,6 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -44,6 +44,6 @@ function App() {
    * elements, React can't render it. So, we need to wrap it with a div.
    * Component must have a single root element.
    * */
-}
+};
 
 export default App;
